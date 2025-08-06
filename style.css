@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #111, #333);
+}
+
+#skills i {
+  margin-bottom: 10px;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
