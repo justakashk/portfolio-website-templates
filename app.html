@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Developer Akash Kumar — Template Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind (CDN for rapid prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta name="description" content="Explore and install modern website templates by Developer Akash Kumar" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3" style="background:transparent;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <div class="rounded-full w-9 h-9 bg-white/30 d-flex align-items-center justify-content-center" style="backdrop-filter: blur(6px);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-indigo-600"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <span class="fw-bold">Akash Kumar</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto me-3 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#templates">Templates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <button id="themeToggle" class="btn btn-sm" aria-label="Toggle theme" title="Toggle light/dark">
+            <i id="themeIcon" class="fa-regular fa-moon"></i>
+          </button>
+          <a class="btn btn-outline-secondary btn-sm" href="#templates">Explore templates</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero-gradient py-20 md:py-28">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="hero-title display-5 fw-bold mb-3" style="font-size:2.6rem;">
+            Developer <span class="text-gradient" style="background:linear-gradient(90deg,var(--accent-1),var(--accent-2)); -webkit-background-clip:text; color:transparent;">Akash Kumar</span>
+          </h1>
+          <p class="lead muted mb-4" style="max-width:680px;">
+            Explore and install modern website templates — beautifully crafted, responsive, and production-ready.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#templates" class="btn btn-accent px-4 py-2">Browse Templates</a>
+            <a href="#contact" class="btn btn-outline-secondary px-4 py-2">Contact</a>
+            <a href="#features" class="btn btn-link muted">Why choose these?</a>
+          </div>
+
+          <div class="mt-5 d-flex gap-3 align-items-center">
+            <div class="d-flex flex-column">
+              <small class="muted">⭐ Curated templates</small>
+              <strong>Fast & Lightweight</strong>
+            </div>
+            <div class="border-start px-3 d-none d-md-block">
+              <small class="muted">📁 Includes install scripts</small>
+              <strong>One-click install</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="card template-card p-3" style="border-radius:16px;">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Templates preview" class="thumb rounded" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div>
+                  <h5 class="mb-0">Starter UI Kit</h5>
+                  <small class="muted">Bootstrap + Tailwind</small>
+                </div>
+                <div class="badge bg-light text-dark">New</div>
+              </div>
+              <p class="muted mb-0 small">A modern landing + docs template for quick projects and prototypes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TEMPLATES SHOWCASE -->
+  <section id="templates" class="py-10">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="h3 fw-bold">Templates Showcase</h2>
+          <p class="muted mb-0">Responsive gallery — preview demos or install quickly.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <input id="searchInput" class="form-control form-control-sm" placeholder="Search templates (e.g., blog, portfolio)" style="min-width:220px;">
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div id="templatesGrid" class="row g-4">
+        <!-- Card template (repeat) -->
+        <!-- We'll include 8 placeholder cards; you can duplicate or generate more -->
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Portfolio+Template+1" alt="Portfolio template 1 preview">
+            <div class="card-body">
+              <h5 class="mb-1">Portfolio — Minimal</h5>
+              <p class="muted small mb-2">Sleek portfolio for designers & freelancers.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Portfolio — Minimal">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/portfolio-minimal.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Agency+Template" alt="Agency template preview">
+            <div class="card-body">
+              <h5 class="mb-1">Agency — Bold</h5>
+              <p class="muted small mb-2">High-impact landing pages for agencies.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Agency — Bold">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/agency-bold.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Blog+Template" alt="Blog template preview">
+            <div class="card-body">
+              <h5 class="mb-1">Blog — Reader</h5>
+              <p class="muted small mb-2">Readability-first blogging layout.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Blog — Reader">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/blog-reader.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=E-commerce+Template" alt="E-commerce template preview">
+            <div class="card-body">
+              <h5 class="mb-1">E-Commerce — Shop</h5>
+              <p class="muted small mb-2">Product pages, carts, checkout UI.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="E-Commerce — Shop">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/ecommerce-shop.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Docs+Template" alt="Docs template preview">
+            <div class="card-body">
+              <h5 class="mb-1">Docs — Clean</h5>
+              <p class="muted small mb-2">Documentation layout with sidebar.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Docs — Clean">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/docs-clean.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Landing+Page" alt="Landing template preview">
+            <div class="card-body">
+              <h5 class="mb-1">Landing — SaaS</h5>
+              <p class="muted small mb-2">Convert-focused SaaS landing layout.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Landing — SaaS">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/landing-saas.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Admin+Dashboard" alt="Admin dashboard preview">
+            <div class="card-body">
+              <h5 class="mb-1">Admin — Dashboard</h5>
+              <p class="muted small mb-2">Tailwind powered admin panel starter.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Admin — Dashboard">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/admin-dashboard.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="template-card h-100">
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Photography+Portfolio" alt="Photography portfolio preview">
+            <div class="card-body">
+              <h5 class="mb-1">Photography — Gallery</h5>
+              <p class="muted small mb-2">Grid-first gallery theme for creatives.</p>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary demo-btn" data-demo="https://example.com" data-name="Photography — Gallery">Demo</button>
+                <a class="btn btn-sm btn-accent install-btn" href="https://example.com/download/photography-gallery.zip" target="_blank" rel="noopener">Install</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /Grid -->
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-8 bg-transparent">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h3 class="fw-bold">Why these templates?</h3>
+          <p class="muted">Each template is designed for performance, accessibility and quick deployment. Use the demo to preview, or click install to download the zip with starter files and install instructions.</p>
+
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><i class="fa-solid fa-check me-2 text-success"></i>Lightweight and SEO-friendly</li>
+            <li class="mb-3"><i class="fa-solid fa-check me-2 text-success"></i>Tailwind + Bootstrap friendly components</li>
+            <li class="mb-3"><i class="fa-solid fa-check me-2 text-success"></i>One-click demo & clear install steps</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 rounded template-card">
+            <h5 class="mb-2">Design & Utilities</h5>
+            <p class="muted small mb-3">Use the included components to mix & match layouts quickly.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-light text-dark">Responsive</span>
+              <span class="badge bg-light text-dark">Accessible</span>
+              <span class="badge bg-light text-dark">Documented</span>
+              <span class="badge bg-light text-dark">RTL-ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-6">
+    <div class="container">
+      <div class="p-4 rounded template-card d-flex justify-content-between align-items-center flex-column flex-md-row gap-3">
+        <div>
+          <h4 class="mb-1">Ready to use in your project?</h4>
+          <p class="muted small mb-0">Download a template and follow the included README for quick install.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <a class="btn btn-accent" href="#templates">Browse All</a>
+          <a class="btn btn-outline-secondary" href="#contact">Get Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="py-6">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5 class="fw-bold mb-2">Built by Akash Kumar</h5>
+          <p class="muted small">Want a custom template or help installing? Reach out and I’ll help set it up.</p>
+
+          <div class="d-flex gap-2 mt-3">
+            <a class="btn btn-sm btn-outline-secondary" href="mailto:akash@example.com">Email</a>
+            <a class="btn btn-sm btn-outline-secondary" href="https://www.linkedin.com/in/justakashk/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#templates" class="muted small">Templates</a></li>
+            <li><a href="#features" class="muted small">Features</a></li>
+            <li><a href="#contact" class="muted small">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="fw-bold">Follow</h6>
+          <div class="d-flex gap-2">
+            <a class="muted fs-5" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a class="muted fs-5" href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="muted fs-5" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 muted small">© <span id="year"></span> Akash Kumar — All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Demo Modal (Bootstrap) -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="demoModalLabel">Template Demo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="demoIframe" class="demo-iframe" src="about:blank" title="Template Demo"></iframe>
+        </div>
+        <div class="modal-footer">
+          <a id="openNewTab" class="btn btn-outline-secondary" href="#" target="_blank" rel="noopener">Open in new tab</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script src="script.js"></script>
+    
+</body>
+</html>
