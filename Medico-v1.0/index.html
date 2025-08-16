@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Alex Sharma | Medical Student Portfolio</title>
+  <meta name="description" content="Elegant, responsive portfolio CV website for a medical student — education, rotations, research, projects, skills, and contact." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Alex Sharma",
+    "jobTitle": "Final-year Medical Student",
+    "affiliation": {"@type":"CollegeOrUniversity","name":"ABC Medical College"},
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://scholar.google.com/"
+    ]
+  }
+  </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home"><span class="gradient-text">AS.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 scrollspy">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 ms-lg-3">
+          <button id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center" type="button" title="Toggle theme"><i class="bi bi-moon-stars me-2"></i><span class="d-none d-sm-inline">Theme</span></button>
+          <a href="#" class="btn btn-brand" download title="Download CV"><i class="bi bi-download me-2"></i>CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero section pt-5 pb-0">
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-right">
+          <h1 class="display-5 fw-bold mb-3">Hi, I'm <span class="gradient-text">Dr. Alex Sharma</span></h1>
+          <p class="lead text-secondary">Final‑year <strong>Medical Student</strong> focused on Internal Medicine and evidence‑based care. Passionate about clinical research, patient communication, and digital health.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a href="#contact" class="btn btn-brand"><i class="bi bi-envelope-paper me-2"></i>Contact</a>
+            <a href="#research" class="btn btn-outline-primary"><i class="bi bi-journal-text me-2"></i>Research</a>
+            <a href="#projects" class="btn btn-outline-secondary"><i class="bi bi-activity me-2"></i>Case Studies</a>
+          </div>
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <a class="link-underline" href="#">LinkedIn</a>
+            <a class="link-underline" href="#">Google Scholar</a>
+            <a class="link-underline" href="#">ORCID</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-lg-end" data-aos="fade-up">
+          <div class="card glass shadow-lg-soft p-4 text-center">
+            <img class="avatar mx-auto mb-3" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=512&auto=format&fit=crop" alt="Portrait of medical student"/>
+            <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>New Delhi, India</p>
+            <p class="text-secondary small mb-3">Available for Clinical Electives • Research Collaborations</p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <span class="badge bg-primary-subtle text-primary-emphasis">Internal Medicine</span>
+              <span class="badge bg-info-subtle text-info-emphasis">Clinical Research</span>
+              <span class="badge bg-teal text-light" style="background:#14b8a6">Digital Health</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5" data-aos="zoom-in">
+          <div class="card p-4 h-100">
+            <h2 class="h4 mb-3">About Me</h2>
+            <p class="mb-2">I'm a final‑year medical student committed to compassionate, evidence‑based care. My interests lie in Internal Medicine, preventive health, and leveraging technology to improve patient outcomes.</p>
+            <p class="mb-0">I’ve completed clinical rotations in Internal Medicine, Emergency Medicine, and Pediatrics, and contributed to research on cardiometabolic risk in young adults.</p>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card p-4 h-100">
+                <div class="d-flex align-items-center mb-2"><i class="bi bi-award fs-4 me-2 text-primary"></i><h3 class="h6 m-0">Clinical Interests</h3></div>
+                <ul class="mb-0 small">
+                  <li>Internal Medicine • Endocrinology</li>
+                  <li>Point‑of‑Care Ultrasound (POCUS)</li>
+                  <li>Evidence Synthesis & Guidelines</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-4 h-100">
+                <div class="d-flex align-items-center mb-2"><i class="bi bi-heart-pulse fs-4 me-2 text-danger"></i><h3 class="h6 m-0">Patient Care</h3></div>
+                <ul class="mb-0 small">
+                  <li>History & Physical (H&P), SOAP notes</li>
+                  <li>Medication reconciliation</li>
+                  <li>Patient counseling & empathy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-4 h-100">
+                <div class="d-flex align-items-center mb-2"><i class="bi bi-cpu fs-4 me-2 text-info"></i><h3 class="h6 m-0">Tech</h3></div>
+                <ul class="mb-0 small">
+                  <li>Excel/SPSS • R basics</li>
+                  <li>Mendeley • Zotero • PRISMA</li>
+                  <li>HIPAA/GDPR awareness</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card p-4 h-100">
+                <div class="d-flex align-items-center mb-2"><i class="bi bi-translate fs-4 me-2 text-success"></i><h3 class="h6 m-0">Languages</h3></div>
+                <p class="mb-0 small">English (Fluent), Hindi (Native), Basic Spanish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Rotations -->
+  <section id="education" class="section bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+        <h2 class="h3 mb-0">Education & Clinical Rotations</h2>
+        <span class="text-secondary small">2019 — 2025</span>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="timeline" data-aos="fade-right">
+            <div class="timeline-item">
+              <h3 class="h6 mb-1">MBBS, ABC Medical College</h3>
+              <p class="small text-secondary mb-2">2019–2025 • GPA 8.7/10</p>
+              <ul class="small mb-0">
+                <li>Honors in Pathology, Pharmacology</li>
+                <li>Student Research Society – Vice President</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h3 class="h6 mb-1">Internal Medicine Rotation • City Hospital</h3>
+              <p class="small text-secondary mb-2">Jan–Mar 2025</p>
+              <p class="small mb-0">Managed 8–10 patients/day under supervision; focused on diabetes & hypertension clinics, discharge summaries, and quality improvement audits.</p>
+            </div>
+            <div class="timeline-item">
+              <h3 class="h6 mb-1">Emergency Medicine Rotation • Metro Care</h3>
+              <p class="small text-secondary mb-2">Oct–Dec 2024</p>
+              <p class="small mb-0">Triage, primary survey (ABCDE), basic wound closure, IV cannulation, and ACLS simulations.</p>
+            </div>
+            <div class="timeline-item">
+              <h3 class="h6 mb-1">Pediatrics Rotation • Children’s Hospital</h3>
+              <p class="small text-secondary mb-2">Jul–Sep 2024</p>
+              <p class="small mb-0">Growth charts, vaccination counseling, and common pediatric infections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Core Competencies</h3>
+            <div class="mt-3">
+              <p class="mb-1 small">History Taking & Examination <span class="float-end">90%</span></p>
+              <div class="progress mb-3"><div class="progress-bar" style="width:90%"></div></div>
+              <p class="mb-1 small">Clinical Reasoning <span class="float-end">85%</span></p>
+              <div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
+              <p class="mb-1 small">Procedures (IV/NG/ECG) <span class="float-end">75%</span></p>
+              <div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
+              <p class="mb-1 small">Research Methods <span class="float-end">80%</span></p>
+              <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="section">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+        <h2 class="h3 mb-0">Research & Publications</h2>
+        <a href="#" class="link-underline small">View full list</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h6">Cardiometabolic Risk in Young Adults</h3>
+              <span class="badge text-bg-light">2025</span>
+            </div>
+            <p class="small text-secondary mb-2">Sharma A., et al. <em>Journal of Student Research</em> (Under Review)</p>
+            <p class="small mb-0">Cross‑sectional study (n=420) exploring correlation between BMI, WHR, and fasting glucose; multivariate analysis with R.</p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card p-4 h-100">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h6">POCUS in ER Triage</h3>
+              <span class="badge text-bg-light">2024</span>
+            </div>
+            <p class="small text-secondary mb-2">Poster at City MedCon 2024</p>
+            <p class="small mb-0">Audit on impact of bedside ultrasound for undifferentiated hypotension; reduced time‑to‑diagnosis by 18%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section bg-body-tertiary">
+    <div class="container">
+      <h2 class="h3 mb-4" data-aos="fade-up">Skills</h2>
+      <div class="row g-3" data-aos="fade-up">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Clinical</h3>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge-skill">H&P</span>
+              <span class="badge-skill">ECG Interpretation</span>
+              <span class="badge-skill">BLS/ACLS</span>
+              <span class="badge-skill">POCUS</span>
+              <span class="badge-skill">Wound Care</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Research</h3>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge-skill">Study Design</span>
+              <span class="badge-skill">SPSS/R</span>
+              <span class="badge-skill">Systematic Review</span>
+              <span class="badge-skill">CONSORT/PRISMA</span>
+              <span class="badge-skill">Reference Mgmt</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Soft Skills</h3>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge-skill">Teamwork</span>
+              <span class="badge-skill">Communication</span>
+              <span class="badge-skill">Time Mgmt</span>
+              <span class="badge-skill">Empathy</span>
+              <span class="badge-skill">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Case Studies -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+        <h2 class="h3 mb-0">Case Studies & Quality Improvement</h2>
+        <a href="#" class="link-underline small">See more</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h6 mb-0">Hypertensive Emergency Pathway</h3>
+                <i class="bi bi-activity"></i>
+              </div>
+              <p class="small text-secondary">QI project standardizing triage and IV therapy; reduced door‑to‑treatment by 12 minutes.</p>
+              <ul class="small mb-3">
+                <li>Developed checklist and SBAR handoff</li>
+                <li>Ran PDSA cycles with ER team</li>
+              </ul>
+              <a class="btn btn-sm btn-outline-primary" href="#">Read Summary</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h6 mb-0">Diabetes Education Toolkit</h3>
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <p class="small text-secondary">Created bilingual patient handouts and group counseling script; improved self‑monitoring adherence by 15%.</p>
+              <ul class="small mb-3">
+                <li>Plain‑language education materials</li>
+                <li>Feedback loop with clinic nurses</li>
+              </ul>
+              <a class="btn btn-sm btn-outline-primary" href="#">Read Summary</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Awards -->
+  <section id="certs" class="section bg-body-tertiary">
+    <div class="container">
+      <h2 class="h3 mb-4" data-aos="fade-up">Certifications & Awards</h2>
+      <div class="row g-3" data-aos="fade-up">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Certifications</h3>
+            <ul class="small mb-0">
+              <li>ACLS (AHA), 2025</li>
+              <li>BLS (AHA), 2024</li>
+              <li>GCP (NIH), 2024</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Awards</h3>
+            <ul class="small mb-0">
+              <li>Dean’s List (3x)</li>
+              <li>Best Poster – MedCon 2024</li>
+              <li>Top Volunteer – Health Camp</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h3 class="h6">Volunteer</h3>
+            <ul class="small mb-0">
+              <li>Rural health outreach (50+ hrs)</li>
+              <li>Blood donation drives</li>
+              <li>Free diabetes screening camps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="h3 mb-3">Get in Touch</h2>
+          <p class="text-secondary">Open to clinical electives, research collaborations, and mentorship. I usually reply within 24–48 hours.</p>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <a class="btn btn-outline-secondary" href="mailto:alex.sharma@example.com"><i class="bi bi-envelope me-2"></i>Email</a>
+            <a class="btn btn-outline-secondary" href="#"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+            <a class="btn btn-outline-secondary" href="#"><i class="bi bi-github me-2"></i>GitHub</a>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="card p-4">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Name</label>
+                  <input class="form-control" type="text" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input class="form-control" type="email" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Subject</label>
+                  <input class="form-control" type="text" required />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button class="btn btn-brand" type="submit"><i class="bi bi-send me-2"></i>Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top bg-body-tertiary">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0 small">© <span id="year"></span> Alex Sharma. All rights reserved.</p>
+      <div class="d-flex align-items-center gap-3 small">
+        <a href="#home" class="text-decoration-none">Home</a>
+        <a href="#about" class="text-decoration-none">About</a>
+        <a href="#contact" class="text-decoration-none">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top & Theme toggle (mobile) -->
+  <div class="sticky-wh d-flex flex-column gap-2">
+    <button id="backToTop" class="btn btn-light border shadow" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
